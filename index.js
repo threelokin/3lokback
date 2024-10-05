@@ -65,6 +65,7 @@ async function fetchNewsData(apiKey, language, query, category, nextPage) {
                 category: category,
                 page: nextPage,
                 country: country,
+                removeduplicate:1,
             },
         });
         return response.data;
